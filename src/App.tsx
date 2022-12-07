@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { GistDetail } from "./gist-detail";
+import { GistDetail } from "./pages/gist-detail";
 import { GistList } from "./pages/gist-list";
 
 function App() {
