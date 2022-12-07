@@ -7,6 +7,7 @@ import { GistSummaryModel } from "../../utils/types";
 
 const dataMapFunction = (gists: any): GistSummaryModel[] => {
     return gists.map((gist: any) =>({
+        id: gist.id,
         title: Object.keys(gist.files).length ? Object.keys(gist.files)[0] : '-',
         description: gist.description,
         createdAt: new Date(gist.created_at),
