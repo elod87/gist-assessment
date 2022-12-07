@@ -23,6 +23,7 @@ export const useGetQuery = <T>(query: string, mapFunction: (newData: any) => T, 
         const json = await response.json();
 
         if (response.ok) {
+          setError(null);
           setData(mapFunction(json));
         } else {
           setError(json.message);
